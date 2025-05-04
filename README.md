@@ -55,6 +55,20 @@ State is kept in the following places:
 * Session State. Clients will need to maintain the state of the sessions they
   have established.
 
+\`\`\`
+[BUG] Closing stale open session for new outgoing prekey bundle
+--------
+Closing session: SessionEntry
+\`\`\`
+
+**Description:**  
+When starting a new prekey bundle, the console displays the following warning at the beginning of session creation and some people find it annoying.
+
+**Note:**  
+Disabling the console output suppresses this message, but doing so removes the ability for the module to provide feedback about session management. This is not ideal, as it may hinder debugging or understanding the session lifecycle.
+
+**Reference:**  
+See related discussion: [WhiskeySockets/Baileys#888](https://github.com/WhiskeySockets/Baileys/issues/888)
 
 License
 --------
