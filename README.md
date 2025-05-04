@@ -55,11 +55,9 @@ State is kept in the following places:
 * Session State. Clients will need to maintain the state of the sessions they
   have established.
 
-\`\`\`
 [BUG] Closing stale open session for new outgoing prekey bundle
 --------
 Closing session: SessionEntry
-\`\`\`
 
 **Description:**  
 When starting a new prekey bundle, the console displays the following warning at the beginning of session creation and some people find it annoying.
